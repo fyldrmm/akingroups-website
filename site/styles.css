@@ -705,6 +705,13 @@ section h2 {
   font-weight: 500;
 }
 
+.label-optional {
+  color: var(--muted);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
