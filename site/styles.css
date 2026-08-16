@@ -159,7 +159,6 @@ textarea:focus-visible {
   background-position: center;
   color: var(--cream);
   padding: 110px 0 100px;
-  text-align: center;
 }
 
 .eyebrow {
@@ -171,18 +170,58 @@ textarea:focus-visible {
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: 52px;
   line-height: 1.15;
   color: var(--cream);
-  max-width: 780px;
-  margin: 0 auto 28px;
+  max-width: 620px;
+  margin: 0 0 24px;
 }
 
 .hero-sub {
-  max-width: 620px;
-  margin: 0 auto 40px;
+  max-width: 560px;
   color: rgba(247, 244, 238, 0.75);
   font-size: 17px;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  text-align: left;
+}
+
+.hero-content { flex: 1 1 auto; }
+.hero-content h1 { margin-left: 0; }
+
+.hero-cta { flex: 0 0 300px; }
+
+.hero-cta-card {
+  background: rgba(247, 244, 238, 0.06);
+  border: 1px solid rgba(230, 200, 148, 0.35);
+  padding: 30px 26px;
+  text-align: center;
+}
+
+.hero-cta-badge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(230, 200, 148, 0.12);
+  border: 1px solid rgba(230, 200, 148, 0.4);
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.hero-cta-card .btn { display: block; margin-bottom: 14px; }
+
+.hero-cta-note {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(247, 244, 238, 0.65);
 }
 
 .btn {
@@ -719,6 +758,10 @@ section h2 {
   .pager { flex-direction: column; gap: 20px; }
   .pager-link, .pager-next { max-width: 100%; text-align: left; margin-left: 0; }
   .pager-next .pager-label { flex-direction: row; }
+  .hero-grid { flex-direction: column; text-align: center; gap: 36px; }
+  .hero-content h1 { max-width: 100%; margin-left: auto; margin-right: auto; }
+  .hero-sub { margin-left: auto; margin-right: auto; }
+  .hero-cta { flex: 0 0 auto; width: 100%; max-width: 340px; }
 }
 
 @media (max-width: 560px) {
