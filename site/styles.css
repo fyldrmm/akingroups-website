@@ -153,7 +153,10 @@ textarea:focus-visible {
 
 /* Hero */
 .hero {
-  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  background-color: var(--navy);
+  background-image: linear-gradient(180deg, rgba(13, 27, 58, 0.87) 0%, rgba(9, 16, 41, 0.94) 100%), var(--bg-image, none);
+  background-size: cover;
+  background-position: center;
   color: var(--cream);
   padding: 110px 0 100px;
   text-align: center;
@@ -324,13 +327,24 @@ section h2 {
 
 .industry {
   display: block;
-  padding: 36px 30px;
   border-left: 3px solid var(--gold);
   background: var(--cream);
   transition: background 0.15s ease;
+  overflow: hidden;
 }
 
 .industry:hover { background: #efe8d8; }
+
+.industry-img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.industry:hover .industry-img { transform: scale(1.05); }
+
+.industry-body { padding: 28px 30px 32px; }
 
 .industry h3 {
   font-size: 21px;
@@ -529,7 +543,10 @@ section h2 {
 
 /* Page hero (sub-pages) */
 .page-hero {
-  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  background-color: var(--navy);
+  background-image: linear-gradient(180deg, rgba(13, 27, 58, 0.87) 0%, rgba(9, 16, 41, 0.94) 100%), var(--bg-image, none);
+  background-size: cover;
+  background-position: center;
   color: var(--cream);
   padding: 90px 0 70px;
   text-align: center;
