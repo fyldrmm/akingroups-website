@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>(function(){try{var t=localStorage.getItem('akin-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akin Group | Growth, Customer &amp; Business Systems</title>
@@ -23,7 +24,7 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="index.html" class="logo">AKIN GROUP</a>
+    <a href="index.html" class="logo">Akin<span>Group</span></a>
     <nav class="nav">
       <a href="solutions.html">Solutions</a>
       <a href="industries.html">Industries</a>
@@ -31,24 +32,35 @@
       <a href="results.html">Results</a>
       <a href="about.html">About</a>
       <a href="contact.html" class="nav-cta">Get a Check-Up</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
     </nav>
   </div>
 </header>
 
 <main>
 
-  <section class="hero" style="--bg-image:url('assets/images/hero-skyline.jpg')">
+  <section class="hero">
     <div class="container hero-grid">
       <div class="hero-content">
-        <p class="eyebrow">Growth, Customer &amp; Business Systems</p>
-        <h1>Get more customers.<br>Make more from them.<br>Bring them back.</h1>
+        <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Growth, Customer &amp; Business Systems</span>
+        <h1>Get more customers.<br>Make more from them.<br><span class="hl">Bring them back.</span></h1>
         <p class="hero-sub">We help hospitality and education businesses grow revenue and save time using better sales, customer and automation systems &mdash; we first find the problem, then build the right solution.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Get a Business Check-Up &rarr;</a>
+          <span class="hero-note">No cost &middot; No obligation &middot; 2 minutes</span>
+        </div>
       </div>
-      <div class="hero-cta">
-        <div class="hero-cta-card">
-          <span class="hero-cta-badge">&#9201; Takes 2 minutes</span>
-          <a href="contact.html" class="btn btn-primary">Get a Business Check-Up</a>
-          <p class="hero-cta-note">No cost. No obligation. No sales pitch &mdash; just a quick, honest conversation.</p>
+      <div class="hero-visual">
+        <img src="assets/images/hero-skyline.jpg" alt="City skyline representing business growth">
+        <div class="hero-stat-card">
+          <span class="hero-stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
+          <div>
+            <strong>Diagnose first</strong>
+            <span>Then we prescribe the fix</span>
+          </div>
         </div>
       </div>
     </div>
@@ -73,42 +85,35 @@
     <div class="container">
       <p class="section-label">What We Do</p>
       <h2>Four ways we grow your business</h2>
+      <p class="section-sub">Every service maps to a stage of the Akin Growth Loop &mdash; nothing gets recommended unless it moves a real number.</p>
       <div class="card-grid">
         <a class="card" href="solutions-get-more-customers.html">
-          <div class="card-img" style="background-image:url('assets/images/solution-leads.jpg')"></div>
-          <div class="card-body">
-            <span class="card-index">01</span>
-            <h3>Get More Customers</h3>
-            <p>Help the right people discover your business and become interested in what you sell.</p>
-            <span class="card-link">Learn more <span>&rarr;</span></span>
-          </div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+          <span class="card-index">01</span>
+          <h3>Get More Customers</h3>
+          <p>Help the right people discover your business and become interested in what you sell.</p>
+          <span class="card-link">Learn more <span>&rarr;</span></span>
         </a>
         <a class="card" href="solutions-sell-more.html">
-          <div class="card-img" style="background-image:url('assets/images/solution-sell.jpg')"></div>
-          <div class="card-body">
-            <span class="card-index">02</span>
-            <h3>Sell More</h3>
-            <p>Turn more interested people into paying customers &mdash; and increase the value of each sale.</p>
-            <span class="card-link">Learn more <span>&rarr;</span></span>
-          </div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 6.5H9.8a3.3 3.3 0 0 0 0 6.6h4.4a3.3 3.3 0 0 1 0 6.6H6"/></svg></div>
+          <span class="card-index">02</span>
+          <h3>Sell More</h3>
+          <p>Turn more interested people into paying customers &mdash; and increase the value of each sale.</p>
+          <span class="card-link">Learn more <span>&rarr;</span></span>
         </a>
         <a class="card" href="solutions-bring-customers-back.html">
-          <div class="card-img" style="background-image:url('assets/images/solution-retain.jpg')"></div>
-          <div class="card-body">
-            <span class="card-index">03</span>
-            <h3>Bring Customers Back</h3>
-            <p>Improve loyalty, retention, reactivation and referrals so customers keep coming back.</p>
-            <span class="card-link">Learn more <span>&rarr;</span></span>
-          </div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+          <span class="card-index">03</span>
+          <h3>Bring Customers Back</h3>
+          <p>Improve loyalty, retention, reactivation and referrals so customers keep coming back.</p>
+          <span class="card-link">Learn more <span>&rarr;</span></span>
         </a>
         <a class="card" href="solutions-automation.html">
-          <div class="card-img" style="background-image:url('assets/images/solution-automate.jpg')"></div>
-          <div class="card-body">
-            <span class="card-index">04</span>
-            <h3>Save Time &amp; Run Smarter</h3>
-            <p>Replace unnecessary manual work with simple systems and automation.</p>
-            <span class="card-link">Learn more <span>&rarr;</span></span>
-          </div>
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <span class="card-index">04</span>
+          <h3>Save Time &amp; Run Smarter</h3>
+          <p>Replace unnecessary manual work with simple systems and automation.</p>
+          <span class="card-link">Learn more <span>&rarr;</span></span>
         </a>
       </div>
     </div>
@@ -118,6 +123,7 @@
     <div class="container">
       <p class="section-label">Who We Work With</p>
       <h2>Specialised in Hospitality and Education</h2>
+      <p class="section-sub">Two industries, on purpose &mdash; instead of trying to serve everyone.</p>
       <div class="industry-grid">
         <a class="industry" href="industries-restaurants-cafes.html">
           <div class="industry-img" style="background-image:url('assets/images/restaurant.jpg')"></div>
@@ -151,6 +157,7 @@
     <div class="container">
       <p class="section-label">How We Work</p>
       <h2>We diagnose first, then prescribe</h2>
+      <p class="section-sub">The client shouldn't need to diagnose themselves &mdash; that's our job, in this order.</p>
       <ol class="process-steps">
         <li>Understand</li>
         <li>Diagnose</li>
@@ -161,6 +168,15 @@
         <li>Measure</li>
         <li>Improve</li>
       </ol>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="container trust-grid">
+      <div class="trust-item"><strong>2</strong><span>Industries we specialise in</span></div>
+      <div class="trust-item"><strong>8</strong><span>Steps in the Growth Loop</span></div>
+      <div class="trust-item"><strong>4</strong><span>Core solution areas</span></div>
+      <div class="trust-item"><strong>0</strong><span>Cost for the first Check-Up</span></div>
     </div>
   </section>
 

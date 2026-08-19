@@ -18,10 +18,22 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  // Theme toggle (light/dark) — initial theme is already set by the inline
+  // no-flash script in <head>; this just wires up the button.
+  var themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('akin-theme', next); } catch (e) {}
+    });
+  }
+
   // Scroll reveal
   if (!reduceMotion) {
     var targets = document.querySelectorAll(
-      '.solutions, .industries, .process, .content-section, .cta-section, .measure-grid, .about-points, .card-grid, .industry-grid'
+      '.solutions, .industries, .process, .content-section, .cta-section, .trust, .measure-grid, .about-points, .card-grid, .industry-grid'
     );
     if ('IntersectionObserver' in window && targets.length) {
       targets.forEach(function (el) { el.classList.add('reveal'); });
